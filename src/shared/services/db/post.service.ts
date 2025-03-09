@@ -29,7 +29,7 @@ class PostService {
 
   public async postsCount(): Promise<number> {
     const count: number = await PostModel.find({}).countDocuments();
-    return count
+    return count;
   }
 
   public async deletePost(postId: string, userId: string): Promise<void> {
